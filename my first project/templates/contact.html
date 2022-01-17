@@ -1,0 +1,61 @@
+
+{% include "header.html" %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="\static\css\style.css">
+    <link rel="stylesheet" href="\static\css\contact_style.css">
+</head>
+
+<body>
+    <div class="container">
+        {% comment %} <div class="navbar">
+            <div class="brand">SRBC</div>
+            <ul class="navbar-items">
+                <li class="navbar-links"><a href="#">Home</a></li>
+                <li class="navbar-links"><a href="#">Service</a></li>
+                <li class="navbar-links"><a href="#">Team</a></li>
+                <li class="navbar-links"><a href="#">Blog</a></li>
+                <li class="navbar-links"><a href="#">ContactUs</a></li>
+            </ul>
+            <span class='buynow'>
+                <a href="#" id="log">Log in</a>
+                <a href="#" id="buy">BUY NOW</a>
+            </span>
+
+        </div> {% endcomment %}
+
+        {% comment %} --------------------End Navbar div--------------------------- {% endcomment %}
+        <div class="header">
+            <div class="col1">
+                <div class="form-container">
+                    <form>
+                        <input class="form-items" required type="text" name="name" id="name"
+                            placeholder="Enter Your Name"><br />
+                        <input class="form-items" required type="email" name="email" id="email"
+                            placeholder="Enter Your Email"><br />
+                        <input class="form-items" required type="mobile" name="mobile" id="mobile"
+                            placeholder="Enter Your Mobile Number"><br />
+                        <textarea rows="8" cols="40" placeholder="Enter Your message Here"></textarea>
+                        <input type="submit" name="submit" id="submit" value="Send">
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="col2">
+                <img src="\static\img\contact img.png" height="450px" alt="">
+            </div>
+        </div>
+        <!-- ----------------------------------end of header------------------------------------ -->
+
+    </div>
+
+</body>
+
+</html>
